@@ -37,7 +37,7 @@ nohup java -jar AutomaticDeployment.jar > AutomaticDeployment.out 2>&1 &
 4、配置webhooks（以github为例）:  
 在项目的settings页面，点击左侧webhook选项，点击new新建webhooks，填写url，并在url拼接需要执行  
 的shell脚本的位置：
-![mark](http://q7y42mue4.bkt.clouddn.com/blog/20200402/it9QRShppxXu.png?imageslim)
+![mark](http://cdn.gongsir.club/blog/20200402/it9QRShppxXu.png?imageslim)
 
 配置url：http://{your_website}:{port}/linux/exec?cmd={cmd}&secret={secret}  
 
@@ -60,12 +60,12 @@ echo "========== 网站更新完成 =========="
 
 secret表示自定义密码，这里需要和代码一致（默认：gongsir0630），以此验证用户身份，  
 如需修改，请编辑src/main/java/club.gongsir.linux.controller.DemoController中exec方法的secret字符串：
-![mark](http://q7y42mue4.bkt.clouddn.com/blog/20200402/3cHCd4NlLvvN.png?imageslim)
+![mark](http://cdn.gongsir.club/blog/20200402/3cHCd4NlLvvN.png?imageslim)
 
 5、保存webhooks配置即可，这样当仓库的代码更新之后，就会自动发post请求以触发shell脚本的执行。
 
 6、执行成功返回：  
-![mark](http://q7y42mue4.bkt.clouddn.com/blog/20200402/5q8TSaYGcooC.png?imageslim)
+![mark](http://cdn.gongsir.club/blog/20200402/5q8TSaYGcooC.png?imageslim)
 
 #### 后期更新
 使用github的secret签名完成用户身份验证
