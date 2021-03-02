@@ -1,8 +1,8 @@
-### AutoMaticDeployment---自动部署
+### AutoMaticDeployment---自动部署👇
 
 <hr/>
 
-#### 项目简介
+#### 项目简介 📒
 
 基于GitHub提供的WebHooks勾子实现静态项目自动部署，流程如下：
 
@@ -11,11 +11,11 @@
 - 请求url
 - 执行脚本，自动部署
 
-#### 技术栈
+#### 技术栈 💻
 - Java
 - SpringBoot
 
-#### 使用说明
+#### 使用说明 🔍
 
 1、克隆代码到本地或者服务器，编辑`src/main/resources`下的`application.properties`文件，修改端口号，然后使用maven命令编译打包:
 ```shell
@@ -58,8 +58,8 @@ secret表示自定义密码，这里需要和代码一致（默认：gongsir0630
 6、执行成功返回：  
 ![图片](http://cdn.gongsir.club/blog/20200402/5q8TSaYGcooC.png?imageslim)
 
-#### 后期更新
-使用github的secret签名完成用户身份验证
+#### TODO ✈️
+- 使用github的secret签名完成用户身份验证
 
-#### 联系我
-个人主页（含联系方式）：https://www.gongsir.club
+#### 联系我 👦
+- 个人主页（含联系方式）：https://www.gongsir.club
