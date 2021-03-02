@@ -37,7 +37,7 @@ nohup java -jar AutomaticDeployment.jar > AutomaticDeployment.out 2>&1 &
 4、配置webhooks（以github为例）:  
 在项目的settings页面，点击左侧webhook选项，点击new新建webhooks，填写url，并在url拼接需要执行  
 的shell脚本的位置：
-![mark](http://cdn.gongsir.club/blog/20200402/it9QRShppxXu.png?imageslim)
+![mark](https://cdn.gongsir.club/blog/20200402/it9QRShppxXu.png?imageslim)
 
 配置url：http://{your_website}:{port}/linux/exec?cmd={cmd}&secret={secret}  
 
@@ -71,4 +71,4 @@ secret表示自定义密码，这里需要和代码一致（默认：gongsir0630
 使用github的secret签名完成用户身份验证
 
 #### 联系我
-个人主页（含联系方式）：http://www.gongsir.club
+个人主页（含联系方式）：https://www.gongsir.club
