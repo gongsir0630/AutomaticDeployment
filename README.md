@@ -17,8 +17,7 @@
 
 #### 使用说明
 
-1、克隆代码到本地或者服务器，修改端口号，编译打包：  
-编辑`src/main/resources`下的`application.properties`文件，修改端口号，然后使用maven命令编译打包:
+1、克隆代码到本地或者服务器，编辑`src/main/resources`下的`application.properties`文件，修改端口号，然后使用maven命令编译打包:
 ```shell
 mvn clean install -Dmaven.test.skip=true
 ```
@@ -30,16 +29,12 @@ nohup java -jar AutomaticDeployment.jar > AutomaticDeployment.out 2>&1 &
 
 3、访问`http://{your_website}:{port}/hello`,显示“hello”表示部署成功
 
-4、配置触发WebHooks（以GitHub为例）:
-在项目的settings页面，点击左侧webhook选项，点击new新建webhooks，填写url，并在url拼接需要执行  
-的shell脚本的位置：
+4、配置触发WebHooks（以GitHub为例）。在项目的settings页面，点击左侧webhook选项，点击new新建webhooks，填写url，并在url拼接需要执行的shell脚本的位置：
 ![图片](https://cdn.gongsir.club/blog/20200402/it9QRShppxXu.png?imageslim)
 
-配置url：`http://{your_website}:{port}/linux/exec?cmd={cmd}&secret={secret}`  
+配置url：`http://{your_website}:{port}/linux/exec?cmd={cmd}&secret={secret}`
 
-参数说明：
-
-其中`cmd`表示需要执行的shell脚本的位置：/root/xxx/update.sh：
+参数说明：其中`cmd`表示需要执行的shell脚本的位置：/root/xxx/update.sh：
 
 ```bash
 echo "========== 开始执行home.sh脚本 =========="
